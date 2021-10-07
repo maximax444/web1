@@ -1,0 +1,142 @@
+.header
+    a
+        color: #1A1C23
+    &__wrap
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 17px 0
+        border-bottom: 1px solid rgba(#A9A9A9, 0.3)
+    &__logo
+        font-weight: 600
+        text-decoration: none
+        font-size: 30px
+    &__info
+        &-name
+            display: block
+            margin-bottom: 8px
+            font-size: 16px
+            text-decoration: none
+            text-align: right
+        &-link
+            display: block
+            font-size: 16px
+            text-decoration: none
+            text-align: right
+
+.main
+    padding: 60px 0
+    &__title
+        margin-top: 0
+        margin-bottom: 40px
+        font-weight: 600
+        font-size: 36px
+        line-height: 48px
+    &__wrap
+        padding-bottom: 50px
+    &__img
+        width: 35%
+        display: inline-block
+        vertical-align: top
+    &__form
+        width: 60%
+        display: inline-block
+        vertical-align: top
+        &-subtitle
+            font-size: 16px
+            padding-top: 25px
+            padding-bottom: 15px
+        &-submit
+            font-size: 18px
+            line-height: 20px
+            color: #FFFFFF
+            padding: 18px 24px
+            background: #1A56FF
+            border-radius: 80px
+            border: 1px solid #1A56FF
+            transition: all 0.3s
+            &:focus
+                outline: none
+            &:hover
+                cursor: pointer
+                color: #1A1C23
+                background: transparent
+            &:disabled
+                opacity: 0.4
+    &__input
+        &-text
+            display: inline-block
+            width: 520px
+            background: #F4F5F6
+            border-radius: 100px
+            border: 1px solid #F4F5F6
+            padding: 20px 25px
+            transition: all 0.3s
+            &.error
+                border: 1px solid red
+            &:hover, &:focus
+                border: 1px solid #1A56FF
+                outline: none
+        &-select
+            width: 150px
+            appearance: none
+            background: #F4F5F6
+            border-radius: 100px
+            border: 1px solid #F4F5F6
+            padding: 20px 25px
+            transition: all 0.3s
+            &.error
+                border: 1px solid red
+            &-wrap
+                display: inline-block
+                margin-right: 15px
+                position: relative
+                &::after
+                    content: ""
+                    display: block
+                    width: 15px
+                    height: 15px
+                    transform: rotate(-90deg)
+                    background: url('../img/drop.png') center no-repeat
+                    background-size: contain
+                    position: absolute
+                    top: 22px
+                    right: 13px
+            &:hover, &:focus
+                border: 1px solid #1A56FF
+                outline: none
+                cursor: pointer
+    &__btns
+        margin-bottom: 20px
+        button
+            border: 1px solid rgba(169, 169, 169, 0.3)
+            padding: 12px 24px
+            background-color: transparent
+            border-radius: 60px
+            margin-right: 16px
+            font-size: 16px
+            transition: all 0.3s
+            &.error
+                border: 1px solid red
+            &:hover, &.active
+                color: #1A56FF
+                border: 1px solid #1A56FF
+                cursor: pointer
+    &__table
+        th
+            padding: 12px 0
+            padding-right: 25px
+            border-bottom: 1px solid rgba(#A9A9A9, 0.3)
+        td
+            padding: 12px 0
+            border-bottom: 1px solid rgba(#A9A9A9, 0.3)
+.footer
+    background: #1C1B26
+    a
+        color: #FFFFFF
+    &__wrap
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 17px 0
+        border-top: 1px solid rgba(#A9A9A9, 0.3)
